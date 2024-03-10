@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SRKR Civil Engineering Department</title>
+  <style>
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1>CIVIL ENGINEERING</h1>
+    <div class="slideshow-container">
+      <img class="mySlides" src="http://srkrec.edu.in/img/civil/civildept.jpg" style="width:100%">
+      <img class="mySlides" src="https://www.qisit.edu.in/images/civil-qisit.jpg" style="width:100%">
+    </div>
+  </center>
+  <h2>About the Department</h2>
+  <p>
+    The Department of Civil Engineering at SRKR Engineering College, Bhimavaram, established in 1980, has earned a distinguished reputation in Andhra Pradesh for its dedicated teaching and consultancy services. The department primarily focuses on undergraduate civil engineering education and selected postgraduate programs in Structural Engineering. It also offers industrial consultancy in various areas including Structural Engineering, Geotechnical Engineering, Transportation Engineering, and Environmental Engineering. The department is committed to fostering research through publications and has established several centers of excellence.
+  </p>
+  <h2>Specifications</h2>
+  <ul>
+    <li>Recognized research centers by Andhra University and JNTUK</li>
+    <li>Established 8 research centers since 2005</li>
+    <li>Contributed 80% of the college's consultancy revenue</li>
+    <li>Offers consultancy in all specializations of Civil Engineering</li>
+    <li>Recognized as third-party quality control by Bhimavaram municipality</li>
+    <li>International student participation from Nepal in B.Tech. and M.Tech.</li>
+    <li>MoU's with various institutions including ANGRAU, GEC, IITs, and international universities</li>
+    <li>8 Ph.D.s awarded and 14 under progress</li>
+    <li>Produced 19 out of 25 declared first ranks in Andhra University since 1984</li>
+    <li>Alumni hold positions in state and national engineering departments</li>
+    <li>Alumni presence across North America, Europe, and the Middle East</li>
+  </ul>
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+  </script>
+</body>
+</html>

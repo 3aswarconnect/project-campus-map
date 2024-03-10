@@ -1,0 +1,64 @@
+<html>
+
+<head>
+
+<title>
+canteen
+</title>
+</head>
+<body>
+
+<br>
+
+
+<center> <img src="c1.jpg" height="500" width="1000">
+</center>
+<br>
+<br>
+<div class="w3-content w3-section" style="max-width:1350px" "max-height:450px">
+ 
+ <img class="mySlides" src="c1.jpg"style="width:100%" "height:100%">
+ 
+ <img class="mySlides" src="https://srkrec.edu.in/img/general_facilities/Canteen.jpg"style="width:100%" "height:100%">
+ 
+ <img class="mySlides" src="https://content3.jdmagicbox.com/comp/west_godavari/t1/9999p8812.8812.191120214500.w9t1/catalogue/chandrika-s-srkr-canteen-west-godavari-mess-8mtm88grt7.jpg"style="width:100%" "height:100%">
+ 
+ <img class="mySlides" src="https://lh5.googleusercontent.com/p/AF1QipP_bQ5YEEbhj3G_TmtqhYcamlAepHtwULj-TGIT=w408-h306-k-no" style="width:100%" "height:100%">
+
+</div>
+
+<script>
+
+var myIndex = 0;
+
+carousel();
+
+
+function carousel()
+ {
+  var i;
+ 
+
+ var x = document.getElementsByClassName("mySlides");
+ 
+ for (i = 0; i < x.length; i++)
+ {
+    x[i].style.display = "none";  
+
+  }
+ 
+ myIndex++;
+ 
+ if (myIndex > x.length) 
+{myIndex = 1}   
+ 
+  x[myIndex-1].style.display = "block";  
+
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+
+}
+
+</script>
+
+</body>
+</html>
